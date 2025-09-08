@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+	list-style: none;
+    font-family: 'BriGro',sans-serif;
+}
+
+header,
+section,
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .content {
+        width: 100%;
+        max-width: 1920px;
+        height: 100dvh;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@font-face {
+    font-family: "BriGro";
+    src: url("/assets/fonts/BricolageGrotesque-Regular.ttf") format("truetype");
+}

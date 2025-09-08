@@ -1,0 +1,32 @@
+header {
+	height: 115px;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+
+	.content {
+		height: 115px;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			width: 64px;
+			height: 64px;
+		}
+
+		nav {
+			width: 100%;
+
+			ul {
+				display: flex;
+				justify-content: space-around;
+				margin: 15px;
+
+				a {
+					color: white;
+				}
+			}
+		}
+	}
+}
