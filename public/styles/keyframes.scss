@@ -6,3 +6,30 @@
 		background: purple; transform: translateX(20px)
 	};
 }
+
+@mixin buttonEffect {
+	@keyframes slideIn {
+    0% {
+		width: 14rem;
+    }
+    100% {
+		width: 24.7rem;
+    }
+}
+
+	@keyframes slideOut {
+    0% {
+		width: 24.7rem;
+    }
+    100% {
+		width: 14rem;
+    }
+}
+
+	&:hover {
+		animation: slideIn 0.7s ease forwards;
+	}
+	&:not(:hover) {
+		animation: slideOut 0.7s ease forwards;
+	}
+}
