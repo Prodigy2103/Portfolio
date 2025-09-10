@@ -1,3 +1,42 @@
 <section>
 
+	<div class="mainInfo">
+
+		<div class="firstImage">
+			<img src="/assets/03_Stickers/Polaroid Frame.png" alt="" />
+			<p>Marcus 😊</p>
+		</div>
+		
+		<div class="mainSectionBtn">
+			<button class="helloBtn">
+				<p class="startText">Hello world</p>
+				<p class="devText">Ich bin Marcus Gühne</p>
+				<img src="/assets/Extras/waving_hand.png" alt="">
+			</button>
+		</div>
+
+		<div class="mainLetters">
+			<p class="frontTitle">
+				@for(letter of frontLetters; track $index){
+					<span class="letter" appHighlight>{{letter}}</span>
+            }
+			</p>
+			<p class="frontTitle frontEnd">
+				@for(letter of devLetters; track $index){
+					<span class="letter" appHighlight>{{letter}}</span>
+            }
+			</p>
+        </div>
+
+		<div class="touchBtn">
+			<button class="getTouch">Get in Touch</button>
+		</div>
+
+		<div class="navLinks">
+			<a href="https://github.com/Prodigy2103" target="blank"><img src="/assets/Extras/Github.png" alt=""></a>
+			<img src="/assets/Extras/Indeed.png" alt="">
+			<a href="mailto:marcusghne@gmx.de"><img src="/assets/Extras/Contact.png" alt=""></a>
+		</div>
+
+	</div>
 </section>

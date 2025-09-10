@@ -1,0 +1,140 @@
+@use "../../../../public/styles/all_styles.scss" as all;
+
+section {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	padding: 5em;
+	padding-right: 10em;
+
+	.aboutBasics {
+		display: flex;
+		align-items: end;
+		padding: 5rem 10rem;
+		flex-direction: column;
+		width: 50%;
+
+    .yellowImg {
+		width: 100%;
+
+		.paperRipYellow {
+			width: 35rem;
+			height: 10rem;
+			transform: rotate(-8deg);
+			top: 50px;
+			// left: -70px;
+		}
+
+		.locationImg {
+			display: flex;
+			align-items: center;
+			position: absolute;
+			transform: rotate(-10deg);
+			top: 90px;
+			left: 80px;
+			width: 80%;
+			gap: 20px;
+
+        p {
+			color: white;
+			font-size: 1.5rem;
+			}
+		}
+    }
+
+    .blueImg {
+		z-index: -5;
+		width: 100%;
+
+		.paperRipBlue {
+			width: 38rem;
+			height: 8rem;
+			left: -30px;
+		}
+
+		.relocationImg {
+			display: flex;
+			align-items: center;
+			position: absolute;
+			top: 45px;
+			left: 150px;
+			width: 70%;
+			gap: 20px;
+
+        p {
+			color: white;
+			font-size: 1.5rem;
+        }
+		}
+    }
+
+	.orangeImg {
+		z-index: -10;
+		width: 100%;
+		top: -50px;
+
+		.paperRipOrange {
+			width: 35rem;
+			height: 10rem;
+			transform: rotate(2deg);
+			top: 15px;
+		}
+
+		.remoteImg {
+			display: flex;
+			align-items: center;
+			position: absolute;
+			transform: rotate(8deg);
+			top: 79px;
+			left: 130px;
+			width: 70%;
+			gap: 20px;
+
+        p {
+			color: white;
+			font-size: 1.5rem;
+        }
+		}
+	}
+}
+
+.aboutInfo {
+	width: 50%;
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+
+	.ownerInfo {
+		display: flex;
+		flex-direction: column;
+		height: 33%;
+		gap: 20px;
+	p {
+		font-size: 1.5rem;
+	}
+
+	h1 {
+		font-size: 5.3rem;
+	}
+}
+
+	.ownerDescription {
+		display: flex;
+		align-items: center;
+		height: 37%;
+	}
+
+	.aboutBtn {
+		display: flex;
+		justify-content: end;
+
+	.talkBtn {
+		@include all.talkBtn();
+	}
+}
+@include all.head();
+}
+}

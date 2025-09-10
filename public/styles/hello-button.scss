@@ -1,0 +1,113 @@
+@mixin helloButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14rem;
+	height: 4rem;
+	font-size: calc(16px + 0.6dvw);
+	padding: 1em;
+	border-radius: 8rem;
+	border: 0.1rem solid #f8f9fa;
+	background-color: #0e1013;
+	color: #f8f9fa;
+	transition: background-color 0.4s ease;
+
+	&:hover {
+    background-color: #19a8b5;	
+	}
+}
+
+@mixin buttonEffect {
+	@keyframes slideIn {
+    0% {
+		width: 14rem;
+    }
+    100% {
+		width: 24.7rem;
+    }
+}
+
+	@keyframes slideOut {
+    0% {
+		width: 21rem;
+    }
+    100% {
+		width: 14rem;
+    }
+}
+
+	&:hover {
+		animation: slideIn 0.7s ease forwards;
+	}
+	&:not(:hover) {
+		animation: slideOut 0.7s ease forwards;
+	}
+}
+
+@mixin textSlideHover {
+	.startText,
+	.devText {
+		position: absolute;
+		left: 3rem;
+		transition: opacity 0.4s ease;
+		white-space: nowrap;
+	}
+
+	.devText {
+		opacity: 0;
+	}
+
+	&:hover {
+		text-transform: uppercase;
+		background-position: right bottom;
+
+    .startText {
+		opacity: 0;
+    }
+    .devText {
+		opacity: 1;
+		}
+	}
+}
+
+@mixin getTouch {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14rem;
+	height: 4rem;
+	font-size: calc(16px + 0.6dvw);
+	padding: 1em;
+	border-radius: 8rem;
+	border: 0.1rem solid #f8f9fa;
+	background-color: #0e1013;
+	color: #f8f9fa;
+	transition: background-color 0.4s ease;
+	box-shadow: 2px 2px 4px #f8f9fa;
+
+	&:hover {
+		background: #f77a54;
+		box-shadow: none;
+	}
+}
+
+@mixin talkBtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14rem;
+	height: 4rem;
+	font-size: calc(16px + 0.6dvw);
+	padding: 1em;
+	border-radius: 8rem;
+	border: 0.1rem solid #0e1013;
+	background-color: #f8f9fa;
+	color: #0e1013;
+	transition: background-color 0.4s ease;
+	box-shadow: 2px 2px 4px #0e1013;
+
+	&:hover {
+		background: #f77a54;
+		box-shadow: none;
+	}
+}
