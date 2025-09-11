@@ -1,17 +1,24 @@
 <section>
 
-	<div class="skillIconsBox">
+	<div class="skillInfo">
+		<div class="skillTitle">
+			<p>{{ 'skills.title' | translate}}</p>
+			<h1 class="skillHead">{{ 'skills.headline' | translate}}</h1>
+		</div>
 
-		<div class="skillIcons">
-				<!-- Die *ngFor-Anweisung ist ein Angular-Template-Syntax, der diesen div-Block für jedes Element in dem Array skillIcons wiederholt. -->
-				<!-- let skill of skillIcons: Bei jedem Durchlauf wird das aktuelle Element im skillIcons-Array der lokalen Variable skill zugewiesen, um auf seine Eigenschaften zugreifen zu können. -->
-				<div class="skillIconBox" *ngFor="let skill of skillIcons"> 
-				<!-- Die src-Eigenschaft des img-Tags wird an die src-Eigenschaft des aktuellen skill-Objekts gebunden, um den Pfad zum Bild dynamisch zu setzen. -->
-				<img class="skillIcon" [src]="skill.src" [alt]="skill.name"/>
-				<!-- Der Text im span-Tag wird durch den Wert der name-Eigenschaft des aktuellen skill-Objekts ersetzt. -->
-				<span>{{ skill.name }}</span>
+		<div class="skillDescription">
+			<p [innerHTML]="'skills.description' | translate"></p>
+		</div>
+	</div>
 
-			</div>
+	<div class="skillIcons">
+			<!-- Die *ngFor-Anweisung ist ein Angular-Template-Syntax, der diesen div-Block für jedes Element in dem Array skillIcons wiederholt. -->
+			<!-- let skill of skillIcons: Bei jedem Durchlauf wird das aktuelle Element im skillIcons-Array der lokalen Variable skill zugewiesen, um auf seine Eigenschaften zugreifen zu können. -->
+		<div class="skillIconBox" *ngFor="let skill of skillIcons"> 
+			<!-- Die src-Eigenschaft des img-Tags wird an die src-Eigenschaft des aktuellen skill-Objekts gebunden, um den Pfad zum Bild dynamisch zu setzen. -->
+			<img class="skillIcon" [src]="skill.src" [alt]="skill.name"/>
+			<!-- Der Text im span-Tag wird durch den Wert der name-Eigenschaft des aktuellen skill-Objekts ersetzt. -->
+			<span>{{ skill.name }}</span>
 
 		</div>
 

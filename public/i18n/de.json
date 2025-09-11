@@ -14,6 +14,12 @@
 	"about" : {
 		"title" : "Wer ist Marcus?",
 		"headline" : "Über mich",
-		"description" : "Hallo ich bin Marcus, seit etwa zwei Jahren in der IT-Welt unterwegs. Aktuell mache ich eine Weiterbildung zum Frontend-Developer bei der Developer Akademie. Meine Leidenschaft ist das Programmieren, weil ich gerne Ideen in funktionierende Anwendungen umsetze. Die ständige Weiterentwicklung der Technologie inspiriert mich, meine Fähigkeiten zu verbessern. Ich lerne aus jeder Herausforderung, während ich nach der effizientesten Lösung suche, und entdecke dabei immer wieder neue, wertvolle Erkenntnisse. Ich bin bereit für eine Zusammenarbeit. Lass uns gemeinsam etwas Außergewöhnliches erschaffen!"
+		"description" : "Hallo ich bin Marcus, seit etwa zwei Jahren in der IT-Welt unterwegs. Aktuell mache ich eine Weiterbildung zum Frontend-Developer bei der Developer Akademie.<br><br> Meine Leidenschaft ist das Programmieren, weil ich gerne Ideen in funktionierende Anwendungen umsetze. Die ständige Weiterentwicklung der Technologie inspiriert mich, meine Fähigkeiten zu verbessern. Ich lerne aus jeder Herausforderung, während ich nach der effizientesten Lösung suche, und entdecke dabei immer wieder neue, wertvolle Erkenntnisse.<br><br> Ich bin bereit für eine Zusammenarbeit. Lass uns gemeinsam etwas Außergewöhnliches erschaffen!"
+	},
+
+	"skills" : {
+		"title" : "Meine Stapel",
+		"headline" : "Fähigkeiten",
+		"description" : "Eine kurze Einführung in Ihre Fähigkeiten. Heben Sie Ihre Erfahrung im Umgang mit<br> verschiedenen Front-End-Technologien hervor und betonen Sie Ihre Bereitschaft,<br> neue Technologien zu erlernen und sich an sie anzupassen."
 	}
 }
