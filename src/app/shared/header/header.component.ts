@@ -9,7 +9,7 @@ import {TranslateModule, TranslateService} from '@ngx-translate/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-constructor(private translate: TranslateService) {
+constructor(public translate: TranslateService) {
       this.translate.addLangs(['de', 'en']);
       this.translate.setDefaultLang('en');
       this,translate.use('en');

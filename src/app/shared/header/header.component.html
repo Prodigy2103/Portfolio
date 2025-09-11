@@ -14,8 +14,15 @@
         </nav>
 
         <div class="languageBtn">
-            <button (click)="useLanguage('en')"><img src="/assets/Extras/HeaderLanguage/English Hover.png" alt=""></button>
-            <button (click)="useLanguage('de')"><img src="/assets/Extras/HeaderLanguage/Deutsch Default.png" alt=""></button>
+            <button (click)="useLanguage('en')"> 
+                <!-- Siehe LerntageBuch -->
+                <img [src]="translate.getCurrentLang() === 'en' ? '/assets/Extras/HeaderLanguage/English Hover.png' : '/assets/Extras/HeaderLanguage/English Default.png'" alt="English"/>
+            </button>
+
+            <button (click)="useLanguage('de')">
+                <!-- Siehe LerntageBuch -->
+                <img [src]="translate.getCurrentLang() === 'de' ? '/assets/Extras/HeaderLanguage/Deutsch Hover.png' : '/assets/Extras/HeaderLanguage/Deutsch Default.png'" alt="Deutsch"/>
+            </button>
         </div>
 
 	</div>

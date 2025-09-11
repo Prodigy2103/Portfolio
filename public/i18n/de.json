@@ -6,6 +6,11 @@
 		"contact" : "Kontakt"
 	},
 
+	"button" : {
+		"getBtn" : "Kontakt aufnehmen",
+		"talkBtn" : "Lass uns sprechen"
+	},
+
 	"about" : {
 		"title" : "Wer ist Marcus?",
 		"headline" : "Über mich",
