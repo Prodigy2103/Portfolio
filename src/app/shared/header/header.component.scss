@@ -37,9 +37,15 @@ header {
 			@include all.contact();
 		}
 
-		.toggleBtn {
-			width: 150px;
-			height: 50px;
+		.languageBtn {
+			display: flex;
+			flex-direction: row;
+			gap: 20px;
+
+			button {
+				background: transparent;
+				border: none;
+			}
 		}
 	}
 }

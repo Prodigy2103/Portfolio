@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+useLanguage(arg0: string) {
+throw new Error('Method not implemented.');
+}
 
 }
