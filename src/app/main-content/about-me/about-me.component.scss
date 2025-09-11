@@ -17,123 +17,96 @@ section {
 		width: 50%;
 
     .yellowImg {
-		width: 100%;
+		transform: rotate(-5deg);
+		margin-bottom: -3.5rem;
+		background-image: url("/assets/02_Ripped Paper/Option 1/Yellow.png");
 
-		.paperRipYellow {
-			width: 35rem;
-			height: 10rem;
-			transform: rotate(-8deg);
-			top: 50px;
+    .paperRipYellow {
+        top: 50px;
 		}
 
-		.locationImg {
-			display: flex;
-			align-items: center;
-			position: absolute;
-			transform: rotate(-10deg);
-			top: 90px;
-			left: 80px;
-			width: 80%;
-			gap: 20px;
-
-        p {
-			color: #f7f9fa;
-			font-size: 1.5rem;
-			}
+    .locationImg {
+        top: -9px;
+		display: flex;
+		align-items: center;
+		gap: 10px;
 		}
     }
 
     .blueImg {
 		z-index: -5;
-		width: 100%;
+		background-image: url("/assets/02_Ripped Paper/Option 1/2 Blue.png");
 
-		.paperRipBlue {
-			width: 38rem;
-			height: 8rem;
-			left: -30px;
+    .paperRipBlue {
+        width: 50rem;
+        height: 8rem;
+        left: -30px;
 		}
 
-		.relocationImg {
-			display: flex;
-			align-items: center;
-			position: absolute;
-			top: 45px;
-			left: 150px;
-			width: 70%;
-			gap: 20px;
-
-        p {
-			color: #f7f9fa;
-			font-size: 1.5rem;
-        }
+	.relocationImg {
+		display: flex;
+		align-items: center;
+		gap: 10px;
 		}
     }
 
-	.orangeImg {
+    .orangeImg {
 		z-index: -10;
-		width: 100%;
-		top: -50px;
+		background-image: url("/assets/02_Ripped Paper/Option 1/3 Orange.png");
+		transform: rotate(3deg);
+		margin-top: -3rem;
 
-		.paperRipOrange {
-			width: 35rem;
-			height: 10rem;
-			transform: rotate(2deg);
-			top: 15px;
+    .paperRipOrange {
+        top: 15px;
+        display: flex;
+        align-items: start;
 		}
 
-		.remoteImg {
-			display: flex;
-			align-items: center;
-			position: absolute;
-			transform: rotate(8deg);
-			top: 79px;
-			left: 130px;
-			width: 70%;
-			gap: 20px;
-
-        p {
-			color: #f7f9fa;
-			font-size: 1.5rem;
-        }
-		}
-	}
-}
-
-.aboutInfo {
-	width: 50%;
-	height: 70vh;
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
-
-	.ownerInfo {
-		display: flex;
-		flex-direction: column;
-		height: 33%;
-		gap: 20px;
-	p {
-		font-size: 1.5rem;
-	}
-
-	h1 {
-		font-size: 5.3rem;
-	}
-}
-
-	.ownerDescription {
+    .remoteImg {
+        top: -8px;
+        transform: rotate(5deg);
 		display: flex;
 		align-items: center;
-		height: 37%;
-	}
-
-	.aboutBtn {
+		gap: 10px;
+		}
+    }
+	@include all.aboutRip();
+}
+    .aboutInfo {
+		width: 50%;
+		height: 70vh;
 		display: flex;
-		justify-content: end;
+		flex-direction: column;
+		gap: 30px;
 
-	.talkBtn {
-		@include all.talkBtn();
-	}
-}
-@include all.head();
-}
+    .ownerInfo {
+        display: flex;
+        flex-direction: column;
+        height: 33%;
+        gap: 20px;
+        p {
+			font-size: 1.5rem;
+        }
+
+        h1 {
+			font-size: 5.3rem;
+        }
+    }
+
+    .ownerDescription {
+        display: flex;
+        align-items: center;
+        height: 37%;
+    }
+
+    .aboutBtn {
+        display: flex;
+        justify-content: end;
+
+        .talkBtn {
+        @include all.talkBtn();
+        }
+    }
+    @include all.head();
+    }
 }

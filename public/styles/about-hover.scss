@@ -35,3 +35,53 @@
 				clip-path: inset(0 0 0 0);
 			}
 		}
+
+@mixin aboutRip {
+		.yellowImg {
+			width: 35rem;
+			height: 10rem;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+		p {
+			color: #f7f9fa;
+			font-size: 1.5rem;
+			}
+		}
+
+		.blueImg {
+			width: 35rem;
+			height: 10rem;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+		p {
+			color: #f7f9fa;
+			font-size: 1.5rem;
+			}
+		}
+
+		.orangeImg {
+			width: 35rem;
+			height: 10rem;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+		p {
+			color: #f7f9fa;
+			font-size: 1.5rem;
+			}
+		}
+}
