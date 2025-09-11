@@ -1,0 +1,14 @@
+{
+	"header" : {
+		"about" : "About me",
+		"skills" : "Skills",
+		"projects" : "Projects",
+		"contact" : "Contact"
+	},
+
+	"about" : {
+		"title" : "Who is Marcus?",
+		"headline" : "About me",
+		"description" : "Hi, I'm Marcus. I've been working in the IT world for about two years. I'm currently completing advanced training to become a front-end developer at the Developer Academy. I'm passionate about programming because I enjoy turning ideas into functional applications. The constant evolution of technology inspires me to improve my skills. I learn from every challenge while searching for the most efficient solution, continually discovering new, valuable insights. I'm ready to collaborate. Let's create something extraordinary together!"
+	}
+}

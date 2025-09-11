@@ -4,6 +4,7 @@ import { AboutMeComponent } from "./about-me/about-me.component";
 import { CommonModule } from '@angular/common';
 import { SkillSetComponent } from "./skill-set/skill-set.component";
 import { ProjectsComponent } from "./projects/projects.component";
+import {TranslateModule, TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main-content',
@@ -13,4 +14,14 @@ import { ProjectsComponent } from "./projects/projects.component";
 })
 export class MainContentComponent {
 
+
+constructor(private translate: TranslateService) {
+      this.translate.addLangs(['de', 'en']);
+      this.translate.setDefaultLang('en');
+      this,translate.use('en');
+  }
+
+  useLanguage(language: string): void {
+      this.translate.use(language);
+  }
 }
