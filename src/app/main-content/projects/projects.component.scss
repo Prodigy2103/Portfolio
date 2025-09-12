@@ -8,7 +8,6 @@ section {
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
-    padding: 0 5rem;
 }
 
 .content {
@@ -19,11 +18,11 @@ section {
     gap: 5rem;
 }
 
-.top-row {
+.topRow {
     width: 100%;
     display: flex;
     align-items: flex-start;
-    gap: 5rem;
+    gap: 1rem;
 
     .project {
         width: 50%;
@@ -92,7 +91,7 @@ section {
     }
 }
 
-.bottom-row {
+.bottomRow {
     width: 100%;
     display: flex;
     justify-content: space-between;
