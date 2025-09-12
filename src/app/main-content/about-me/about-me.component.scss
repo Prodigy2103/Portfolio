@@ -9,6 +9,9 @@ section {
 	padding: 5em;
 	padding-right: 10em;
 
+	.content {
+		flex-direction: row;
+
 	.aboutBasics {
 		display: flex;
 		align-items: end;
@@ -110,4 +113,5 @@ section {
         }
     }
     }
+}
 }

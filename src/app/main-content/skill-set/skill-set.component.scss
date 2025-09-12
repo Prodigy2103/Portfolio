@@ -9,16 +9,17 @@ section {
 	align-items: center;
 	z-index: 20;
 
+	.content {
+
 	.skillInfo {
-		width: 80%;
+		width: 100%;
 		display: flex;
 
     .skillTitle {
-		width: 25%;
+		width: 20%;
 		display: flex;
 		flex-direction: column;
-		align-items: end;
-		padding: 32px;
+		margin-right: 5rem;
 
 		p {
 			color: #f7f9fa;
@@ -37,8 +38,8 @@ section {
 			position: absolute;
 			z-index: -1;
 			width: 85%;
-			top: 60px;
-			left: 40px;
+			top: 30px;
+			left: 60px;
 			transform: scaleX(-1)
 		}
     }
@@ -134,4 +135,5 @@ section {
 		transform: rotate(15deg);
 		}
 	}
+}
 }
