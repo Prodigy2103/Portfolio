@@ -47,19 +47,27 @@ section {
 		padding-left: 12rem;
 		width: 100%;
 
-		.helloBtn {
-			@include all.helloButton();
-			@include all.buttonEffect();
-			@include all.textSlideHover();
+    .helloBtn {
+        @include all.helloButton();
+        @include all.buttonEffect();
+        @include all.textSlideHover();
+		@include all.waveRoll();
+        
+        img {
+            padding: 10px;
+            top: -50px;
+            right: -50px;
+        }
 
-			img {
-				padding: 10px;
-				top: -50px;
-				right: -50px;
-				
-			}
-		}
-	}
+        &:hover img {
+            animation: roll-wave-in 1.7s forwards;
+        }
+
+        &:not(:hover) img {
+            animation: roll-wave-out 1.2s forwards;
+        }
+    }
+}
 
 	.mainLetters {
 		width: 70%;

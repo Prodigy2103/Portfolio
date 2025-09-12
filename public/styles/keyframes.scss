@@ -33,3 +33,23 @@
 		animation: slideOut 0.7s ease forwards;
 	}
 }
+
+@mixin waveRoll {
+	@keyframes roll-wave-in {
+		0% {
+			transform: translateX(0) rotate(0deg);
+		}	
+		100% {
+			transform: translateX(120px) rotate(360deg);
+		}
+	}
+
+	@keyframes roll-wave-out {
+		0% {
+			transform: translateX(120px) rotate(360deg);
+		}
+		100% {
+			transform: translateX(0) rotate(0deg);
+		}
+	}
+}
