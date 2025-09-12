@@ -11,6 +11,19 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class SkillSetComponent {
 
+  graySkillIcons = [
+    { name: 'HTML', src: '/assets/Extras/iconsGray/HTMLGray.png' },
+    { name: 'CSS', src: '/assets/Extras/iconsGray/CSSGray.png' },
+    { name: 'JavaScript', src: '/assets/Extras/iconsGray/JSGray.png' },
+    { name: 'TypeScript', src: '/assets/Extras/iconsGray/TSGray.png' },
+    { name: 'Angular', src: '/assets/Extras/iconsGray/AngularGray.png' },
+    { name: 'Firebase', src: '/assets/Extras/iconsGray/FirebaseGray.png' },
+    { name: 'GitHub', src: '/assets/Extras/iconsGray/GitGray.png' },
+    { name: 'Rest-API', src: '/assets/Extras/iconsGray/APIGray.png' },
+    { name: 'Scrum', src: '/assets/Extras/iconsGray/ScrumGray.png' },
+    { name: 'Material Design', src: '/assets/Extras/iconsGray/MaterialDesignGray.png' }
+  ];
+
   skillIcons = [
     { name: 'HTML', src: '/assets/Extras/icons/HTML.png' },
     { name: 'CSS', src: '/assets/Extras/icons/CSS.png' },

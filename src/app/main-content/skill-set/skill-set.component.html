@@ -5,6 +5,7 @@
 		<div class="skillTitle">
 			<p>{{ 'skills.title' | translate}}</p>
 			<h1 class="skillHead">{{ 'skills.headline' | translate}}</h1>
+			<img src="/assets/00_Hand-drawn lines/02_Skills/Color option 2.png" alt="">
 		</div>
 
 		<div class="skillDescription">
@@ -16,23 +17,24 @@
 	<div class="skillPeel">
 
 		<div class="skillIcons">
-
-				<!-- Die *ngFor-Anweisung ist ein Angular-Template-Syntax, der diesen div-Block für jedes Element in dem Array skillIcons wiederholt. -->
-				<!-- let skill of skillIcons: Bei jedem Durchlauf wird das aktuelle Element im skillIcons-Array der lokalen Variable skill zugewiesen, um auf seine Eigenschaften zugreifen zu können. -->
-			<div class="skillIconBox" *ngFor="let skill of skillIcons">
-			
-				<!-- Die src-Eigenschaft des img-Tags wird an die src-Eigenschaft des aktuellen skill-Objekts gebunden, um den Pfad zum Bild dynamisch zu setzen. -->
-				<img class="skillIcon" [src]="skill.src" [alt]="skill.name"/>
-				<!-- Der Text im span-Tag wird durch den Wert der name-Eigenschaft des aktuellen skill-Objekts ersetzt. -->
-				<span>{{ skill.name }}</span>
-
+			<!-- Dieser Container wiederholt sich für jedes Element in der Liste graySkillIcons. graySkill ist das aktuelle Element und i sein Index, um auf das entsprechende bunte Icon zugreifen zu können. -->
+			<div class="skillIconBox" *ngFor="let graySkill of graySkillIcons; let i = index">
+				<!-- Dieses Element zeigt das graustufige Icon an. Der Quellpfad ([src]) und der alternative Text ([alt]) werden dynamisch aus den Daten von graySkill geladen. -->
+				<img class="skillIcon grayscale" [src]="graySkill.src" [alt]="graySkill.name" />
+				<!-- ieses Element zeigt das farbige Icon an. Der Quellpfad und der alternative Text werden dynamisch aus der Liste skillIcons am gleichen Index [i] geladen. -->
+				<img class="skillIcon color" [src]="skillIcons[i].src" [alt]="skillIcons[i].name" />
+				<!-- Dies zeigt den Namen der Fertigkeit unter dem Icon an. Der Name wird aus der graySkill Liste übernommen -->
+				<span>{{ graySkill.name }}</span>
+    
 			</div>
 
 		</div>
 
 		<div class="peelImg">
+
 			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ut dolorum, adipisci aperiam aliquid itaque quo reprehenderit rem esse similique. Quam, dolorum! Iure eum dignissimos expedita deleniti. At, officiis ratione.</p>
-			<!-- <img src="/assets/03_Stickers/01_Skills - Peel off/Default.png" alt=""> -->
+		
 		</div>
+	
 	</div>
 </section>

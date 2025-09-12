@@ -24,5 +24,11 @@
 		"title" : "My Stack",
 		"headline" : "Skill set",
 		"description" : "A short introduction of your skills. Highlight your experience of using<br> different front-end technologies and emphasise your openness<br> to learning and adapting to new technologies."
+	},
+
+	"projects" : {
+		"title" : "My Craft",
+		"headline" : "Projects",
+		"description" : "Placeholder: Encourage people to take a look and interact with your projects. Highlight your approach to creating responsive, user-friendly projects with efficient code."
 	}
 }

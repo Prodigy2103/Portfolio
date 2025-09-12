@@ -24,5 +24,11 @@
 		"title" : "Meine Stapel",
 		"headline" : "Fähigkeiten",
 		"description" : "Eine kurze Einführung in Ihre Fähigkeiten. Heben Sie Ihre Erfahrung im Umgang mit<br> verschiedenen Front-End-Technologien hervor und betonen Sie Ihre Bereitschaft,<br> neue Technologien zu erlernen und sich an sie anzupassen."
+	},
+
+	"projects" : {
+		"title" : "Mein Handwerk",
+		"headline" : "Projekte",
+		"description" : "Platzhalter: Ermutigen Sie die Leute, einen Blick auf Ihre Projekte zu werfen und mit ihnen zu interagieren. Heben Sie Ihren Ansatz hervor, responsive, benutzerfreundliche Projekte mit effizientem Code zu erstellen."
 	}
 }
