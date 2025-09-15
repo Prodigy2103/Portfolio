@@ -3,11 +3,13 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./shared/header/header.component";
 import { ProjectsComponent } from "./main-content/projects/projects.component";
 import {TranslateModule, TranslateService} from '@ngx-translate/core';
+import { ColleaguesComponent } from './main-content/colleagues/colleagues.component';
+import { FooterComponent } from "./shared/footer/footer.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, ProjectsComponent, TranslateModule],
+  imports: [RouterOutlet, HeaderComponent, ProjectsComponent, TranslateModule, ColleaguesComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -6,11 +6,10 @@ section {
 	display: flex;
 	align-items: center;
 	flex-direction: row;
-	padding: 5em;
-	padding-right: 10em;
 
 	.content {
 		flex-direction: row;
+		height: auto;
 
 	.aboutBasics {
 		display: flex;
@@ -76,7 +75,7 @@ section {
 	@include all.aboutRip();
 }
     .aboutInfo {
-		width: 50%;
+		width: 100%;
 		height: 70vh;
 		display: flex;
 		flex-direction: column;
@@ -87,12 +86,16 @@ section {
         flex-direction: column;
         height: 33%;
         gap: 20px;
+
         p {
 			font-size: 1.5rem;
         }
 
         h1 {
-			font-size: 5.3rem;
+			font-size: clamp(16px, 6.5dvw, 72px);
+			width: 62.5rem;
+			height: 20rem;
+			z-index: 0;
         }
 
 		@include all.head();

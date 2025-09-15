@@ -1,7 +1,7 @@
 @use "../../../../public/styles/all_styles.scss" as all;
 
 section {
-	background-image: url("/assets/01_Background/Design Size Relation@3x/01_Hero.png");
+	background-image: url("/assets/01_Background/Design Size Relation@3x/01_Hero2.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -59,10 +59,12 @@ section {
             padding: 10px;
             top: -50px;
             right: -50px;
+			display: none;
         }
 
         &:hover img {
             animation: roll-wave-in 1.7s forwards;
+			display: flex;
         }
 
         &:not(:hover) img {

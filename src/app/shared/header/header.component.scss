@@ -13,8 +13,8 @@ header {
 		align-items: center;
 
 		img {
-			width: 64px;
-			height: 64px;
+			width: 96px;
+			height: 96px;
 		}
 
 		nav {
@@ -46,6 +46,11 @@ header {
 				background: transparent;
 				border: none;
 				cursor: pointer;
+				
+				img {
+					width: 64px;
+					height: 64px;
+				}
 			}
 		}
 	}

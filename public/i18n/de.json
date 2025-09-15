@@ -30,5 +30,29 @@
 		"title" : "Mein Handwerk",
 		"headline" : "Projekte",
 		"description" : "Platzhalter: Ermutigen Sie die Leute, einen Blick auf Ihre Projekte zu werfen und mit ihnen zu interagieren. Heben Sie Ihren Ansatz hervor, responsive, benutzerfreundliche Projekte mit effizientem Code zu erstellen."
+	},
+
+	"collage" : {
+		"headline" : "Gedanken der Kollegen",
+		"description" : "IN IHREN WORTEN"
+	},
+
+	"contact" : {
+		"headline" : "Bereit zur<br> Zusammenarbeit?",
+		"description" : "KONTAKTIEREN SIE MICH",
+		"descriptionTwo" : "Ermutigen Sie andere, mit Ihnen Kontakt aufzunehmen und zu beschreiben, für welche Rolle Sie sich interessieren. Zeigen Sie Ihr Vertrauen in Ihre Fähigkeit,<br><br> mit Ihrem Fachwissen und Ihrer Begeisterung für die Weiterentwicklung Ihrer Fähigkeiten einen sinnvollen Beitrag zum Team zu leisten. Zeigen Sie Interesse an der Mitarbeit an einem neuen Projekt und betonen Sie gleichzeitig Ihren Wert und Ihre Fähigkeiten."
+	},
+
+	"contactForm" : {
+		"name" : "Wie ist dein Name?",
+		"email" : "Wie lautet deine Email?",
+		"message" : "Wie kann ich Dir helfen?",
+		"privacyPolice" : "Ich habe die Datenschutzerklärung gelesen",
+		"privacyLink" : "und stimme der Verarbeitung meiner Daten wie beschrieben zu",
+		"errorMessage" : "Bitte akzeptieren Sie die Datenschutzbestimmungen",
+		"sendButton" : "Absenden",
+		"nameHolder" : "Dein Name steht hier",
+		"emailHolder" : "Ihre E-Mail-Adresse@email.com",
+		"messageHolder" : "Hallo Lukas, ich interessiere mich für..."
 	}
 }

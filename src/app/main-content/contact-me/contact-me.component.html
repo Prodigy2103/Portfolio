@@ -1,0 +1,42 @@
+<section>
+	<div class="content">
+		<div class="contactMe">
+			<p>{{ 'contact.description' | translate}}</p>
+			<h1 [innerHTML]="'contact.headline' | translate"></h1>
+		
+			<div class="contactDescription">
+				<p [innerHTML]="'contact.descriptionTwo' | translate"></p>
+			</div>
+		</div>
+
+		<form>
+
+			<div class="formGroup">
+				<label for="name">{{ 'contactForm.name' | translate}}</label>
+				<input type="name" id="name" name="name" placeholder="{{ 'contactForm.nameHolder' | translate}}">
+			</div>
+
+			<div class="formGroup">
+				<label for="email">{{ 'contactForm.email' | translate}}</label>
+				<input type="email" id="email" name="email" placeholder="{{ 'contactForm.emailHolder' | translate}}">
+			</div>
+
+			<div class="formGroup">
+				<label for="message">{{ 'contactForm.message' | translate}}</label>
+				<textarea id="message" name="message" placeholder="{{ 'contactForm.messageHolder' | translate}}"></textarea>
+			</div>
+
+			<div class="checkboxGroup">
+				<input type="checkbox" id="privacyPolicy" name="privacy-policy">
+				<label for="privacyPolicy">{{ 'contactForm.privacyPolice' | translate}} <a href="#" class="privacy-link">privacy policy</a> {{ 'contactForm.privacyLink' | translate}}</label>
+				<span class="error-message">{{ 'contactForm.errorMessage' | translate}}</span>
+			</div>
+
+			<div class="subBtn">
+				<button type="submit">{{ 'contactForm.sendButton' | translate}}</button>
+			</div>
+
+		</form>
+
+	</div>
+</section>
