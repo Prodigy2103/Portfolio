@@ -3,11 +3,11 @@
         <div class="topRow">
             <div class="project">
                 <div class="projectInfo">
-                    <p>{{ 'projects.title' | translate}}</p>
-                    <h1 class="headSkill">{{ 'projects.headline' | translate}}</h1>
+                    <p>{{ 'projects.info.title' | translate}}</p>
+                    <h1 class="headSkill">{{ 'projects.info.headline' | translate}}</h1>
                 </div>
                 <div class="projectDescription">
-                    <p>{{ 'projects.description' | translate}}</p>
+                    <p>{{ 'projects.info.description' | translate}}</p>
                 </div>
             </div>
 
@@ -15,11 +15,11 @@
                 <div class="projectImg">
                     <img class="projectOne" src="/assets/ProjectsImg/29_Join thumbnail.png" alt="">
                     <div class="projectBtn">
-                        <button class="styledBtn">Project details</button>
+                        <button  class="styledBtn" (click)="toggleProjectView()">Project details</button>
                     </div>
                 </div>
                 <div class="projectDescriptionOne">
-                    <p>{{ 'projects.description' | translate}}</p>
+                    <p>{{ 'projects.info.description' | translate}}</p>
                 </div>
             </div>
         </div>
@@ -29,13 +29,13 @@
                 <div class="projectImg">
                     <img src="/assets/ProjectsImg/startscreen_1.png" alt="">
                     <div class="projectBtn">
-                        <button class="styledBtn">Project details</button>
+                        <button class="styledBtn" (click)="toggleProjectView()">Project details</button>
                     </div>
 
                 </div>
                 
                 <div class="projectDescriptionOne">
-                    <p>{{ 'projects.description' | translate}}</p>
+                    <p>{{ 'projects.info.description' | translate}}</p>
                 </div>
             </div>
 
@@ -43,18 +43,17 @@
                 <div class="projectImg">
                     <img class="projectOne" src="/assets/ProjectsImg/Component 30.png" alt="">
                     <div class="projectBtn">
-                        <button class="styledBtn">Project details</button>
+                        <button class="styledBtn" (click)="toggleProjectView()">Project details</button>
                     </div>
                 </div>
                 <div class="projectDescriptionOne">
-                    <p>{{ 'projects.description' | translate}}</p>
+                    <p>{{ 'projects.info.description' | translate}}</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- TODO:  -buttons in img div einfügen
-			-hover Effekte img  
-			-verlinkung auf infoseite der Projects-->
-
+<div class="overlay-container" *ngIf="showProjectView">
+    <app-project-view (closeEvent)="closeProjectView()"></app-project-view>
+</div>

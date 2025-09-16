@@ -53,3 +53,23 @@
 		}
 	}
 }
+
+@mixin waveRollFooter {
+	@keyframes roll-wave-in {
+		0% {
+			transform: translateX(0) rotate(0deg);
+		}	
+		100% {
+			transform: translateX(50px) rotate(360deg);
+		}
+	}
+
+	@keyframes roll-wave-out {
+		0% {
+			transform: translateX(50px) rotate(360deg);
+		}
+		100% {
+			transform: translateX(0) rotate(0deg);
+		}
+	}
+}

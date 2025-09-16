@@ -1,0 +1,73 @@
+<section id="pepe">
+	<div class="content">
+
+		<div class="headerTwo">
+
+			<img src="/assets/Extras/MyLogo (1).png" alt="">
+
+			<nav>
+				<ul>
+					<li class="about"><a href="#about">{{ 'header.about' | translate}}</a></li>
+					<li class="skills"><a href="">{{ 'header.skills' | translate}}</a></li>
+					<li class="projects"><a href="">{{ 'header.projects' | translate}}</a></li>
+					<li class="contact"><a href="">{{ 'header.contact' | translate}}</a></li>
+				</ul>
+			</nav>
+
+			<div class="languageBtn">
+				<button (click)="useLanguage('en')"> 
+                <!-- Siehe LerntageBuch -->
+					<img [src]="translate.getCurrentLang() === 'en' ? '/assets/Extras/HeaderLanguage/English Hover.png' : '/assets/Extras/HeaderLanguage/English Default.png'" alt="English"/>
+				</button>
+
+				<button (click)="useLanguage('de')">
+                <!-- Siehe LerntageBuch -->
+					<img [src]="translate.getCurrentLang() === 'de' ? '/assets/Extras/HeaderLanguage/Deutsch Hover.png' : '/assets/Extras/HeaderLanguage/Deutsch Default.png'" alt="Deutsch"/>
+				</button>
+            </div>
+
+		</div>
+
+		<div class="backBtn">
+			<img src="/assets/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Breadcrumb arrow 1.png" alt="">
+			<a (click)="goBack()">Go Back</a>
+		</div>
+
+		<div class="projectView">
+			<div class="projectSingleView">
+					<h1>EL Pollo Loco</h1>
+					<h2>{{ 'projects.pepe.titleDesc' | translate}}</h2>
+					<p>{{ 'projects.pepe.descriptionOne' | translate}}</p>
+					<h2>{{ 'projects.pepe.titleDetails' | translate}}</h2>
+					<p>{{ 'projects.pepe.descriptionTwo' | translate}}</p>
+				<div class="duration">
+					<h3>{{ 'projects.pepe.titleDuration' | translate}}</h3>
+					<p>{{ 'projects.pepe.descriptionDuration' | translate}}</p>
+				</div>
+
+				<div class="skillIcons">
+    				<div class="skillIconBox" *ngFor="let skill of skillIcons">
+						<img class="skillIcon color" [src]="skill.src" [alt]="skill.name" />
+						<span>{{ skill.name }}</span>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="pepeImg">
+				<img src="/assets/ProjectsImg/startscreen_2.png" alt="">
+
+				<div class="pepeBtn">
+					<button class="getTouch">Github</button>
+					<button class="getTouch">Live Test</button>
+				</div>
+
+				<div class="nextProjectBtn">
+					<a href="#join">Next Project</a>
+					<img src="/assets/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Next project arrow 2.png" alt="">
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>

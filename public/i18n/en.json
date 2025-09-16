@@ -27,10 +27,22 @@
 	},
 
 	"projects" : {
+		
+		"info" : {
 		"title" : "My Craft",
 		"headline" : "Projects",
 		"description" : "Placeholder: Encourage people to take a look and interact with your projects. Highlight your approach to creating responsive, user-friendly projects with efficient code."
 	},
+
+	"pepe" : {
+		"titleDesc" : "Description",
+		"titleDetails" : "Implementation Details",
+		"titleDuration" : "Duration: ",
+		"descriptionOne" : "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+		"descriptionTwo" : "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
+		"descriptionDuration" : "3 Weeks"
+	}
+},
 
 	"collage" : {
 		"headline" : "Colleagues' Thoughts",

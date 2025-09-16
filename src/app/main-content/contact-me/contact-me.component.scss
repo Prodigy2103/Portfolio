@@ -1,107 +1,212 @@
+@use "../../../../public/styles/all_styles.scss" as all;
+
 section {
 	background-image: url("./../../../../public/assets/01_Background/Design Size Relation@3x/06_Contact2.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 100%;
-	height: 120dvh;
+	height: 130dvh;
 	color: #f7f9fa;
 
 	.content {
-		flex-direction: row;
+		display: flex;
+		flex-direction: column;
 		gap: 2rem;
+		padding-top: 25rem;
 
-		.contactMe {
-			width: 50%;
-			height: 50vh;
+    .topContent {
+		display: flex;
+		gap: 2rem;
+		flex-wrap: wrap;
+		}
 
-			h1 {
-				font-size: clamp(16px, 3.5dvw, 72px);
-				margin-bottom: 5rem;
+    .contactMe {
+		flex: 1;
+		min-width: 300px;
+
+    h1 {
+        font-size: clamp(16px, 3.5dvw, 72px);
+        margin-bottom: 5rem;
+		}
+
+    p {
+        margin-bottom: 2rem;
+        font-size: clamp(16px, 1.5dvw, 32px);
+		}
+
+    .contactDescription {
+
+        p {
+			font-size: clamp(16px, 1.2dvw, 32px);
+			}
+		}
+    }
+
+    form {
+		flex: 1;
+		min-width: 300px;
+
+	img {
+        width: 10rem;
+        position: absolute;
+        right: 0.5rem;
+		}
+
+		.formGroup {
+			height: 25%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+
+        input {
+			background: transparent;
+			border: none;
+			padding: 0 3rem;
 			}
 
-			p {
-				margin-bottom: 2rem;
-				font-size: clamp(16px, 1.5dvw, 32px);
+        textarea {
+			background: transparent;
+			border: none;
+			padding: 0 3rem;
 			}
 
-			.contactDescription {
-
-				p {
-					font-size: clamp(16px, 1.2dvw, 32px);
-				}
+        label {
+			padding: 0 3rem;
 			}
 		}
 
-		form {
-			width: 50%;
-			height: 50vh;
+    .checkboxGroup {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-left: 3rem;
+        gap: 1rem;
 
-			.formGroup {
-				height: 25%;
-				display: flex;
-				flex-direction: column;
-				justify-content: space-evenly;
-
-				input {
-					background: transparent;
-					border: none;
-					padding: 0 3rem;
-				}
-
-				textarea {
-					background: transparent;
-					border: none;
-					padding: 0 3rem;
-				}
-
-				label {
-					padding: 0 3rem;
-				}
+        input {
+			cursor: pointer;
 			}
 
-			.checkboxGroup {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-				padding-left: 3rem;
-				gap: 1rem;
+        span {
+			display: none;
+			}
+		}
 
-				input {
-					cursor: pointer;
-				}
+    .subBtn {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: end;
 
-				span {
-					display: none;
-				}
+        button {
+			width: 20%;
+			background-color: rgba(130, 129, 129, 0.7);
+			color: white;
+			border: 0.1px solid white;
+			box-shadow: 4px 4px 8px #f7f9fa;
+			border-radius: 25px;
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
+			font-family: Arial, sans-serif;
+			transition: background-color 0.3s ease;
+
+        &:hover {
+            background: #f77a54;
+            box-shadow: none;
+			}
+        }
+    }
+}
+
+    .myName {
+		width: 100%;
+		height: 130px;
+		margin-top: 6rem;
+
+		img {
+			width: 72px;
+			height: 72px;
+
+        &:hover {
+			color: yellow;
+			}
+		}
+    }
+
+	.footerLink {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		height: 5rem;
+		justify-content: space-between;
+
+		nav {
+			margin-top: 2rem;
+
+			ul {
+				
+			li {
+			height: 4rem;
+			z-index: 0;
 			}
 
-			.subBtn {
-				margin-top: 2rem;
-				display: flex;
-				justify-content: end;
-
-				button {
-					width: 20%;
-					background-color: rgba(130, 129, 129, 0.7);
-					color: white;
-					border: 0.1px solid white;
-					box-shadow: 4px 4px 8px #f7f9fa;
-					border-radius: 25px;
-					padding: 10px 20px;
-					font-size: 16px;
-					cursor: pointer;
-					font-family: Arial, sans-serif;
-					transition: background-color 0.3s ease;
-
-					&:hover {
-						background: #f77a54;
-						box-shadow: none;
-					}
-				}
+			a {
+			color: #f7f9fa;
+			font-size: clamp(16px, 1dvw, 24px);
 			}
+
+			@include all.legalFooter();
 		}
 	}
-	
+		
+
+			.gitBtn {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				width: 7%;
+				height: 3rem;
+				background: transparent;
+				border: none;
+				color: white;
+				border-radius: 50px;
+				@include all.waveRollFooter();
+
+			p {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+				margin: 0;
+				font-size: clamp(16px, 1dvw, 24px);
+				}
+        
+			img {
+				top: -33px;
+				right: 10px;
+				display: none;
+				}
+
+			&:hover {
+				cursor: pointer;
+				background: blue;
+				transition: background-color 0.4s ease;
+				}
+
+			&:hover img {
+				animation: roll-wave-in 1.7s forwards;
+				display: flex;
+				}
+
+			&:not(:hover) img {
+				animation: roll-wave-out 1.2s forwards;
+				display: none;
+				}
+			}
+		}
+    }
 }
+	

@@ -34,3 +34,9 @@ footer {
     font-family: "BriGro";
     src: url("/assets/fonts/BricolageGrotesque-Regular.ttf") format("truetype");
 }
+
+/* projects.component.scss oder styles.scss */
+
+body.no-scroll {
+    overflow: hidden;
+}

@@ -27,9 +27,21 @@
 	},
 
 	"projects" : {
+
+		"info" : {
 		"title" : "Mein Handwerk",
 		"headline" : "Projekte",
 		"description" : "Platzhalter: Ermutigen Sie die Leute, einen Blick auf Ihre Projekte zu werfen und mit ihnen zu interagieren. Heben Sie Ihren Ansatz hervor, responsive, benutzerfreundliche Projekte mit effizientem Code zu erstellen."
+	},
+
+	"pepe" : {
+		"titleDesc" : "Beschreibung",
+		"titleDetails" : "Implementierungsdetails",
+		"titleDuration" : "Dauer: ",
+		"descriptionOne" : "Spring-, Lauf- und Wurfspiel mit objektorientiertem Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+		"descriptionTwo" : "Kurzer Text, der Ihre Rolle oder den Arbeitsablauf für dieses spezielle Projekt beschreibt. Informieren Sie einen Personalvermittler über Ihr Wissen und Ihre Fähigkeit, selbstständig oder strukturiert zu arbeiten.",
+		"descriptionDuration" : "3 Wochen"
+	}
 	},
 
 	"collage" : {
