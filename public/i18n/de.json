@@ -34,6 +34,15 @@
 		"description" : "Platzhalter: Ermutigen Sie die Leute, einen Blick auf Ihre Projekte zu werfen und mit ihnen zu interagieren. Heben Sie Ihren Ansatz hervor, responsive, benutzerfreundliche Projekte mit effizientem Code zu erstellen."
 	},
 
+	"join" : {
+		"titleDesc" : "Beschreibung",
+		"titleDetails" : "Implementierungsdetails",
+		"titleDuration" : "Dauer: ",
+		"descriptionOne" : "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben per Drag & Drop, weisen Sie Benutzer und Kategorien zu.",
+		"descriptionTwo" : "Kurzer Text, der Ihre Rolle oder den Arbeitsablauf für dieses spezielle Projekt beschreibt. Informieren Sie einen Personalvermittler über Ihr Wissen und Ihre Fähigkeit, selbstständig oder strukturiert zu arbeiten.",
+		"descriptionDuration" : "5 Wochen"
+	},
+
 	"pepe" : {
 		"titleDesc" : "Beschreibung",
 		"titleDetails" : "Implementierungsdetails",
@@ -41,6 +50,15 @@
 		"descriptionOne" : "Spring-, Lauf- und Wurfspiel mit objektorientiertem Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
 		"descriptionTwo" : "Kurzer Text, der Ihre Rolle oder den Arbeitsablauf für dieses spezielle Projekt beschreibt. Informieren Sie einen Personalvermittler über Ihr Wissen und Ihre Fähigkeit, selbstständig oder strukturiert zu arbeiten.",
 		"descriptionDuration" : "3 Wochen"
+	},
+
+	"daBubble" : {
+		"titleDesc" : "Beschreibung",
+		"titleDetails" : "Implementierungsdetails",
+		"titleDuration" : "Dauer: ",
+		"descriptionOne" : "Diese App ist eine Slack-Klon-App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Messaging und robusten Kanalorganisation.",
+		"descriptionTwo" : "Kurzer Text, der Ihre Rolle oder den Arbeitsablauf für dieses spezielle Projekt beschreibt. Informieren Sie einen Personalvermittler über Ihr Wissen und Ihre Fähigkeit, selbstständig oder strukturiert zu arbeiten.",
+		"descriptionDuration" : "4 Wochen"
 	}
 	},
 

@@ -12,14 +12,20 @@ import { ProjectViewComponent } from "./project-view/project-view.component";
 })
 export class ProjectsComponent {
   showProjectView: boolean = false;
+  selectedProject: string = '';
 
-  toggleProjectView(): void {
-    this.showProjectView = !this.showProjectView;
-    if (this.showProjectView) {
-      document.body.classList.add('no-scroll');
-    } else {
-      document.body.classList.remove('no-scroll');
-    }
+  // toggleProjectView(): void {
+  //   this.showProjectView = !this.showProjectView;
+  //   if (this.showProjectView) {
+  //     document.body.classList.add('no-scroll');
+  //   } else {
+  //     document.body.classList.remove('no-scroll');
+  //   }
+  // }
+  toggleProjectView(projectId: string): void {
+    this.selectedProject = projectId; // Setzt die ID für das Overlay
+    this.showProjectView = true;
+    document.body.classList.add('no-scroll');
   }
 
   // Wichtig: Beim Verlassen der Komponente den Scrollbalken wieder aktivieren

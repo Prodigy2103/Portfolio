@@ -34,13 +34,34 @@
 		"description" : "Placeholder: Encourage people to take a look and interact with your projects. Highlight your approach to creating responsive, user-friendly projects with efficient code."
 	},
 
+	"join" : {
+		"id" : "join",
+		"titleDesc" : "Description",
+		"titleDetails" : "Implementation Details",
+		"titleDuration" : "Duration: ",
+		"descriptionOne" : "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+		"descriptionTwo" : "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
+		"descriptionDuration" : "5 Weeks"
+	},
+
 	"pepe" : {
+		"id" : "pepe",
 		"titleDesc" : "Description",
 		"titleDetails" : "Implementation Details",
 		"titleDuration" : "Duration: ",
 		"descriptionOne" : "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
 		"descriptionTwo" : "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
 		"descriptionDuration" : "3 Weeks"
+	},
+
+	"daBubble" : {
+		"id" : "daBubble",
+		"titleDesc" : "Description",
+		"titleDetails" : "Implementation Details",
+		"titleDuration" : "Duration: ",
+		"descriptionOne" : "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+		"descriptionTwo" : "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
+		"descriptionDuration" : "4 Weeks"
 	}
 },
 

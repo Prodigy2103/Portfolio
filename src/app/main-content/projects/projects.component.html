@@ -15,7 +15,7 @@
                 <div class="projectImg">
                     <img class="projectOne" src="/assets/ProjectsImg/29_Join thumbnail.png" alt="">
                     <div class="projectBtn">
-                        <button  class="styledBtn" (click)="toggleProjectView()">Project details</button>
+                        <button  class="styledBtn" (click)="toggleProjectView('join')">Project details</button>
                     </div>
                 </div>
                 <div class="projectDescriptionOne">
@@ -29,7 +29,7 @@
                 <div class="projectImg">
                     <img src="/assets/ProjectsImg/startscreen_1.png" alt="">
                     <div class="projectBtn">
-                        <button class="styledBtn" (click)="toggleProjectView()">Project details</button>
+                        <button class="styledBtn" (click)="toggleProjectView('pepe')">Project details</button>
                     </div>
 
                 </div>
@@ -43,7 +43,7 @@
                 <div class="projectImg">
                     <img class="projectOne" src="/assets/ProjectsImg/Component 30.png" alt="">
                     <div class="projectBtn">
-                        <button class="styledBtn" (click)="toggleProjectView()">Project details</button>
+                        <button class="styledBtn" (click)="toggleProjectView('daBubble')">Project details</button>
                     </div>
                 </div>
                 <div class="projectDescriptionOne">
@@ -54,6 +54,6 @@
     </div>
 </section>
 
-<div class="overlay-container" *ngIf="showProjectView">
-    <app-project-view (closeEvent)="closeProjectView()"></app-project-view>
+<div class="overlayContainer" *ngIf="showProjectView">
+    <app-project-view [currentProject]="selectedProject" (closeEvent)="closeProjectView()"></app-project-view>
 </div>

@@ -136,7 +136,10 @@ section {
 
 @include all.headSkill();
 
-.overlay-container {
+.overlayContainer {
+
+    background: black;
+    background-repeat: no-repeat;
     position: fixed;
     top: 0;
     left: 0;
