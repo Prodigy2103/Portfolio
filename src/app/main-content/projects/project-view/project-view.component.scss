@@ -1,16 +1,15 @@
 @use './../../../../../public/styles/all_styles.scss' as all;
 
 .projectView {
-	border: 2px solid red;
 	background-image: url('./../../../../../public/assets/01_Background/Img Original Size/Note book paper2.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: black;
 	width: 100vw;
 	height: 100vh;
+	// top: -50px;
 
 	.headerTwo {
-		border: 2px solid green;
 		width: 100%;
 		position: absolute;
 		display: flex;
@@ -62,12 +61,11 @@
 	}
 
 	.backBtn {
-		border: 2px solid yellow;
 		display: flex;
 		align-items: center;
-		margin-top: 7rem;
 		padding-left: 2rem;
 		cursor: pointer;
+		top: 80px;
 
 		img {
 			width: 32px;
@@ -79,18 +77,17 @@ section {
 	height: 100vh;
 	z-index: 0;
 
-	.content {
-		border: 2px solid blue;
+	.content {	
 		display: flex;
 		flex-direction: row;
 		justify-content: start;
 		align-items: center;
 		height: 80vh;
 		padding: 0;
+		top: 100px;
 
 		.projectSingleView {
 			width: 50%;
-			border: 2px solid red;
 		}
 
 		.pepeImg {
@@ -100,16 +97,13 @@ section {
 			flex-direction: column;
 			align-items: center;
 			justify-content: space-between;
-			border: 2px solid pink;
 
 			img {
-				border: 2px solid teal;
 				width: 70%;
 			}
 
 			.nextProjectBtn {
 				width: 100%;
-				border: 2px solid yellow;
 				display: flex;
 				align-items: center;
 				justify-content: end;
