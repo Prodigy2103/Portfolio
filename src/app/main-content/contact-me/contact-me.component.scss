@@ -63,12 +63,14 @@ section {
 			background: transparent;
 			border: none;
 			padding: 0 3rem;
+			color: white;
 			}
 
         textarea {
 			background: transparent;
 			border: none;
 			padding: 0 3rem;
+			color: white;
 			}
 
         label {
@@ -111,12 +113,29 @@ section {
 			font-family: Arial, sans-serif;
 			transition: background-color 0.3s ease;
 
-        &:hover {
-            background: #f77a54;
-            box-shadow: none;
+		&:disabled {
+			background-color: rgba(130, 129, 129, 0.4);
+			color: #ccc; 
+			cursor: pointer;
+			box-shadow: none; /* Entfernt den Schatten */
+    }
+    
+		&:not(:disabled):hover {
+			background: #f77a54;
+			box-shadow: none;
 			}
         }
     }
+
+	.success-message {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #d4edda; /* Ein helles Grün als Hintergrund */
+  color: #155724; /* Dunkelgrüner Text */
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  text-align: center;
+}
 }
 
     .myName {

@@ -7,7 +7,6 @@
 	background-color: black;
 	width: 100vw;
 	height: 100vh;
-	// top: -50px;
 
 	.headerTwo {
 		width: 100%;
@@ -65,7 +64,14 @@
 		align-items: center;
 		padding-left: 2rem;
 		cursor: pointer;
-		top: 80px;
+		top: 7rem;
+		z-index: 10;
+		gap: 20px;
+		font-size: clamp(16px, 1dvw, 24px);
+
+		&:hover a {
+			color: #f77a54;
+		}
 
 		img {
 			width: 32px;
@@ -78,36 +84,108 @@ section {
 	z-index: 0;
 
 	.content {	
-		display: flex;
-		flex-direction: row;
-		justify-content: start;
-		align-items: center;
+		@include all.flContent();
 		height: 80vh;
 		padding: 0;
 		top: 100px;
+		gap: 50px;
 
 		.projectSingleView {
-			width: 50%;
+			width: 45%;
+			height: 60vh;
+
+			h1 {
+
+				top: -3rem;
+				padding-left: 1rem;
+				font-size: clamp(16px, 6.5dvw, 72px);
+			}
+
+			h2 {
+				margin-bottom: 1rem;
+				padding-left: 1rem;
+				font-size: clamp(16px, 4dvw, 32px);
+			}
+
+			p {
+				margin-bottom: 0.8rem;
+				padding-left: 1rem;
+				font-size: clamp(16px, 1.4dvw, 32px);
+			}
+
+			.duration {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				margin-bottom: 2rem;
+				padding-left: 1rem;
+
+				h3 {
+					font-size: clamp(16px, 1.4dvw, 32px);
+				}
+
+				p {
+					margin: 0;
+					font-size: clamp(16px, 1.4dvw, 24px);
+				}
+			}
+
+			.skillIcons {
+				display: flex;
+				justify-content: space-evenly;
+
+				.skillIconBox {
+					display: flex;
+					align-items: center;
+					gap: 20px;
+
+					img {
+						width: 48px;
+						height: 48px;
+					}
+
+					span {
+						font-size: clamp(16px, 1dvw, 24px);
+					}
+				}
+			}
+
+			@include all.headProjectsJoin();
+			@include all.headProjectsPepe();
 		}
 
 		.pepeImg {
 			width: 50%;
 			height: 66vh;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: space-between;
+			@include all.flPepeImg();
 
 			img {
 				width: 70%;
+				border-radius: 1.3rem;
 			}
+
+			.pepeBtn {
+				width: 70%;
+				display: flex;
+				justify-content: end;
+				gap: 2rem;
+
+			.getTouch {
+				@include all.getTouchProjects();
+			}
+		}
 
 			.nextProjectBtn {
 				width: 100%;
-				display: flex;
-				align-items: center;
-				justify-content: end;
+				@include all.flNextBtn();
+				padding-right: 7rem;
 				cursor: pointer;
+				gap: 20px;
+				font-size: clamp(16px, 1dvw, 24px);
+
+				&:hover a {
+					color: #f77a54;
+				}
 
 				a {
 					color: white;
@@ -120,4 +198,5 @@ section {
 			}
 	}
 }
-}}
+}
+}

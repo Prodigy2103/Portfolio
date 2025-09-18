@@ -85,3 +85,79 @@
 			}
 		}
 }
+
+@mixin headProjectsJoin{
+	.headProjectsJoin {
+				position: relative;
+				overflow: hidden;
+				width: 70%;
+				height: 20%;
+			}
+
+			.headProjectsJoin a {
+				display: block;
+				padding: 10px;
+				text-decoration: none;
+				color: #f7f9fa;
+				position: relative;
+				z-index: -2;
+			}
+
+			.headProjectsJoin:after {
+				content: "";
+				position: absolute;
+				top: 70px;
+				left: 0;
+				width: 30%;
+				height: 30%;
+				background-image: url('/assets/00_Hand-drawn lines/01_About me/Color option 3.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				z-index: 10;
+				clip-path: inset(0 100% 0 0);
+				transition: clip-path 0.5s ease-out;
+			}
+
+			.headProjectsJoin:hover:after {
+				clip-path: inset(0 0 0 0);
+			}
+		}
+
+@mixin headProjectsPepe{
+	.headProjectsPepe {
+				position: relative;
+				overflow: hidden;
+				width: 70%;
+				height: 20%;
+			}
+
+			.headProjectsPepe a {
+				display: block;
+				padding: 10px;
+				text-decoration: none;
+				color: #f7f9fa;
+				position: relative;
+				z-index: -2;
+			}
+
+			.headProjectsPepe:after {
+				content: "";
+				position: absolute;
+				top: 70px;
+				left: 0;
+				width: 90%;
+				height: 30%;
+				background-image: url('/assets/00_Hand-drawn lines/01_About me/Color option 3.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				z-index: 10;
+				clip-path: inset(0 100% 0 0);
+				transition: clip-path 0.5s ease-out;
+			}
+
+			.headProjectsPepe:hover:after {
+				clip-path: inset(0 0 0 0);
+			}
+		}

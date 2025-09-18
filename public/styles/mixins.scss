@@ -3,9 +3,30 @@
 	margin: $mar;
 }
 
-@mixin fl($jc: center, $alit: center, $flexdir: column, $gap: 0, $rgap: 0, $cgap: 0, ) {
+@mixin fl($jc: center, $alit: center, $flexdir: column, $js: start, $gap: 0, $rgap: 0, $cgap: 0, ) {
 	display: flex;
 	justify-content: $jc;
 	align-items: $alit;
 	flex-direction: $flexdir;
+}
+
+@mixin flNextBtn($je: end, $alit: center, $flexdirRow: row, $gap: 0, $rgap: 0, $cgap: 0, ) {
+	display: flex;
+	justify-content: $je;
+	align-items: $alit;
+	flex-direction: $flexdirRow;
+}
+
+@mixin flPepeImg($flexdirCol: column, $alit: center, $jsb: space-between) {
+	display: flex;
+	flex-direction: $flexdirCol;
+	align-items: $alit;
+	justify-content: $jsb;
+}
+
+@mixin flContent($flexdirRow: row, $alit: center, $js: start) {
+	display: flex;
+	flex-direction: $flexdirRow;
+	align-items: $alit;
+	justify-content: $js;
 }

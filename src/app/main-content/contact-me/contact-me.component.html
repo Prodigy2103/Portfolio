@@ -10,35 +10,37 @@
 			</div>
 		</div>
 
-		<form>
-
-			<img src="/assets/03_Stickers/00_Round/02_ Color option 3 - Yellow.png" alt="">
+		<form (ngSubmit)="onSubmit()">
+				<img src="/assets/03_Stickers/00_Round/02_ Color option 3 - Yellow.png" alt="">
 
 			<div class="formGroup">
 				<label for="name">{{ 'contactForm.name' | translate}}</label>
-				<input type="name" id="name" name="name" placeholder="{{ 'contactForm.nameHolder' | translate}}">
+				<input type="name" id="name" name="name" [(ngModel)]="name" placeholder="{{ 'contactForm.nameHolder' | translate}}">
 			</div>
 
 			<div class="formGroup">
 				<label for="email">{{ 'contactForm.email' | translate}}</label>
-				<input type="email" id="email" name="email" placeholder="{{ 'contactForm.emailHolder' | translate}}">
+				<input type="email" id="email" name="email" [(ngModel)]="email" placeholder="{{ 'contactForm.emailHolder' | translate}}">
 			</div>
 
 			<div class="formGroup">
 				<label for="message">{{ 'contactForm.message' | translate}}</label>
-				<textarea id="message" name="message" placeholder="{{ 'contactForm.messageHolder' | translate}}"></textarea>
+				<textarea id="message" name="message" [(ngModel)]="message" placeholder="{{ 'contactForm.messageHolder' | translate}}"></textarea>
 			</div>
 
 			<div class="checkboxGroup">
-				<input type="checkbox" id="privacyPolicy" name="privacy-policy">
+				<input type="checkbox" id="privacyPolicy" name="privacy-policy" [(ngModel)]="isPrivacyAccepted">
 				<label for="privacyPolicy">{{ 'contactForm.privacyPolice' | translate}} <a href="#" class="privacy-link">privacy policy</a> {{ 'contactForm.privacyLink' | translate}}</label>
 				<span class="error-message">{{ 'contactForm.errorMessage' | translate}}</span>
 			</div>
 
 			<div class="subBtn">
-				<button type="submit">{{ 'contactForm.sendButton' | translate}}</button>
+				<button type="submit" [disabled]="!isPrivacyAccepted">{{ 'contactForm.sendButton' | translate}}</button>
 			</div>
 
+			<div *ngIf="emailSent" class="success-message">
+				<p>Ihre E-Mail wurde erfolgreich versendet! Vielen Dank.</p>
+			</div>
 		</form>
 
 		</div>

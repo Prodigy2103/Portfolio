@@ -16,7 +16,7 @@ section {
 		display: flex;
 
     .skillTitle {
-		width: 20%;
+		width: 30%;
 		display: flex;
 		flex-direction: column;
 		margin-right: 5rem;
@@ -31,7 +31,7 @@ section {
 			color: #f7f9fa;
 			display: flex;
 			justify-content: end;
-			font-size: 5.3rem;
+			font-size: 4.3rem;
 		}
 
 		img {
@@ -62,43 +62,42 @@ section {
 		flex-direction: row;
 		align-items: center;
 		justify-content: end;
-		gap: 150px;
 
     .skillIcons {
 		width: 45%;
-		height: 35vh;
+		height: 40vh;
 		display: flex;
 		flex-wrap: wrap;
-		gap: 30px;
 		justify-content: center;
 		align-items: center;
+		gap: 10px;
+		margin: 2rem 2rem 0 0;
 }
 
 	.skillIconBox {
 		position: relative;
-		width: 120px;
-		height: 120px;
+		width: 100px;
+		height: 100px;
 		display: flex;
 		flex-direction: column;
-		justify-content:end;
+		justify-content:center;
 		align-items: center;
 		transition: transform 0.3s ease-in-out;
 		cursor: pointer;
 
 	span {
-		margin-top: 10px;
+		margin-top: 3rem;
 		font-size: 1rem;
 		color: white;
 	}
 }
 
 	.skillIcon {
-		width: 80px;
-		height: 80px;
+		width: 48px;
+		height: 48px;
 		object-fit: contain;
 		position: absolute;
 		top: 0;
-		left: 20px;
 		transition: opacity 0.4s ease-in-out;
 }
 

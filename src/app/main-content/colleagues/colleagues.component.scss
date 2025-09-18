@@ -25,6 +25,16 @@ section {
 				position: relative;
 				left: 16rem;
 				z-index: 4;
+
+				p {
+					position: absolute;
+					width: 75%;
+					height: 30vh;
+					border: 2px solid green;
+					transform: rotate(-4deg);
+					top: 50px;
+					left: 67px;
+				}
 			}
 
 			.stickerMiddle {
@@ -35,6 +45,15 @@ section {
 				&:hover {
 					z-index: 8;
 				}
+
+				p {
+					position: absolute;
+					width: 75%;
+					height: 30vh;
+					border: 2px solid green;
+					top: 23px;
+					left: 63px;
+				}
 			}
 
 			.stickerRight {
@@ -44,6 +63,16 @@ section {
 
 				&:hover {
 					z-index: 4;
+				}
+
+				p {
+					position: absolute;
+					width: 75%;
+					height: 30vh;
+					border: 2px solid green;
+					transform: rotate(4deg);
+					top: 42px;
+					left: 67px;
 				}
 			}
 		}
