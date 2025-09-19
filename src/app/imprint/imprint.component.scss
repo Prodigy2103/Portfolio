@@ -1,0 +1,90 @@
+@use "./../../../public/styles/all_styles.scss" as all;
+
+section {
+	background-image: url('/assets/01_Background/Design Size Relation@3x/03_Skills.png');
+	height: 50vh;
+
+	.content {
+		border: 2px solid red;
+		display: flex;
+		align-items: start;
+
+		h1, h2 {
+			color: #3355ff;
+			margin-bottom: 1rem;
+			border: 2px solid green;
+		}
+
+		p {
+			border: 2px solid blue;
+			margin-bottom: 1rem;
+		}
+
+		span {
+			color: #3355ff
+		}
+
+		.footerLink {
+			border: 2px solid black;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			height: 4rem;
+			justify-content: space-around;
+
+			a {
+				color: #f7f9fa;
+				font-size: clamp(16px, 1dvw, 24px);
+			}
+
+			.gitBtn {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				width: 7rem;
+				height: 3rem;
+				background: transparent;
+				border: none;
+				color: white;
+				border-radius: 50px;
+				@include all.waveRollFooter();
+
+			p {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+				margin: 0;
+				font-size: clamp(16px, 1dvw, 24px);
+				}
+        
+			img {
+				top: -33px;
+				right: 10px;
+				display: none;
+				}
+
+			&:hover {
+				cursor: pointer;
+				width: 7rem;
+				background: blue;
+				transition: background-color 0.4s ease;
+				}
+
+			&:hover img {
+				animation: roll-wave-in 1.7s forwards;
+				display: flex;
+				}
+
+			&:not(:hover) img {
+				animation: roll-wave-out 1.2s forwards;
+				display: none;
+				}
+			}
+
+			@include all.legalFooter();
+		}
+	}
+}

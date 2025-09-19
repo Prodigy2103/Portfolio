@@ -19,14 +19,11 @@
 	<div class="skillPeel">
 
 		<div class="skillIcons">
-			<!-- Dieser Container wiederholt sich für jedes Element in der Liste graySkillIcons. graySkill ist das aktuelle Element und i sein Index, um auf das entsprechende bunte Icon zugreifen zu können. -->
-			<div class="skillIconBox" *ngFor="let graySkill of graySkillIcons; let i = index">
-				<!-- Dieses Element zeigt das graustufige Icon an. Der Quellpfad ([src]) und der alternative Text ([alt]) werden dynamisch aus den Daten von graySkill geladen. -->
-				<img class="skillIcon grayscale" [src]="graySkill.src" [alt]="graySkill.name" />
-				<!-- ieses Element zeigt das farbige Icon an. Der Quellpfad und der alternative Text werden dynamisch aus der Liste skillIcons am gleichen Index [i] geladen. -->
+	
+			<div class="skillIconBox" *ngFor="let skill of skillIcons; let i = index">
+				
 				<img class="skillIcon color" [src]="skillIcons[i].src" [alt]="skillIcons[i].name" />
-				<!-- Dies zeigt den Namen der Fertigkeit unter dem Icon an. Der Name wird aus der graySkill Liste übernommen -->
-				<span>{{ graySkill.name }}</span>
+				<span>{{ skill.name }}</span>
     
 			</div>
 

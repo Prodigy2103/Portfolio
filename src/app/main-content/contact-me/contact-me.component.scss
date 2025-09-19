@@ -116,7 +116,7 @@ section {
 		&:disabled {
 			background-color: rgba(130, 129, 129, 0.4);
 			color: #ccc; 
-			cursor: pointer;
+			cursor: default;
 			box-shadow: none; /* Entfernt den Schatten */
     }
     
@@ -128,14 +128,14 @@ section {
     }
 
 	.success-message {
-  margin-top: 1.5rem;
-  padding: 1rem;
-  background-color: #d4edda; /* Ein helles Grün als Hintergrund */
-  color: #155724; /* Dunkelgrüner Text */
-  border: 1px solid #c3e6cb;
-  border-radius: 5px;
-  text-align: center;
-}
+		margin-top: 1.5rem;
+		padding: 1rem;
+		background-color: #d4edda; /* Ein helles Grün als Hintergrund */
+		color: #155724; /* Dunkelgrüner Text */
+		border: 1px solid #c3e6cb;
+		border-radius: 5px;
+		text-align: center;
+	}
 }
 
     .myName {
@@ -157,35 +157,20 @@ section {
 		width: 100%;
 		display: flex;
 		align-items: center;
-		height: 5rem;
-		justify-content: space-between;
-
-		nav {
-			margin-top: 2rem;
-
-			ul {
-				
-			li {
-			height: 4rem;
-			z-index: 0;
-			}
+		height: 4rem;
+		justify-content: space-around;
 
 			a {
-			color: #f7f9fa;
-			font-size: clamp(16px, 1dvw, 24px);
+				color: #f7f9fa;
+				font-size: clamp(16px, 1dvw, 24px);
 			}
-
-			@include all.legalFooter();
-		}
-	}
-		
 
 			.gitBtn {
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				position: relative;
-				width: 7%;
+				width: 7rem;
 				height: 3rem;
 				background: transparent;
 				border: none;
@@ -211,6 +196,7 @@ section {
 
 			&:hover {
 				cursor: pointer;
+				width: 7rem;
 				background: blue;
 				transition: background-color 0.4s ease;
 				}
@@ -225,7 +211,8 @@ section {
 				display: none;
 				}
 			}
+
+			@include all.legalFooter();
 		}
-    }
+	}
 }
-	
